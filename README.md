@@ -1,52 +1,125 @@
-# Órbita 14 — Pré-temporada IFSP
+# 🪐 Órbita 14 — Pré-temporada IFSP
 
-Uma campanha dupla de 14 dias para chegar ao segundo semestre com Trigonometria e Polinômios em funcionamento, sem transformar as férias numa segunda faculdade.
+Campanha de 14 dias para entrar no semestre com **Trigonometria e Polinômios em funcionamento**, sem transformar as férias em uma segunda grade curricular.
 
-## Estrutura
+A experiência combina progressão curta, feedback imediato, mapas visuais e prática fechada em uma interface mobile-first.
 
-- **Órbita Trigonométrica:** 14 missões principais de 55–90 minutos e 112 questões.
-- **Forja Polinomial:** 14 side quests de 20–35 minutos e 56 questões.
-- **Combo diário normal:** 75–100 minutos na maioria dos dias; nos quatro finais, 105–125 minutos divididos em dois rounds.
-- **Modo sobrevivência:** somente a side quest, para manter o movimento em dias ruins.
-- **Modo Boss:** combo completo mais dois erros capturados.
+## 🎯 Estrutura da campanha
 
-## Princípios
+### 🌙 Órbita Trigonométrica
 
-- zero respostas escritas obrigatórias;
-- explicações, questões e 28 mapas SVG autorais;
+- 14 missões principais;
+- sessões de aproximadamente 55–90 minutos;
+- 112 questões;
+- progressão orientada pelos tópicos centrais de trigonometria.
+
+### 🔥 Forja Polinomial
+
+- 14 side quests;
+- sessões de aproximadamente 20–35 minutos;
+- 56 questões;
+- revisão progressiva de polinômios.
+
+### ⚡ Modos de carga
+
+**Combo normal:** 75–100 min na maior parte dos dias.
+
+**Dias finais:** 105–125 min, divididos em rounds.
+
+**Modo sobrevivência:** somente a side quest, para preservar consistência em dias ruins.
+
+**Modo Boss:** campanha completa + captura explícita de erros.
+
+## 📚 Princípios didáticos
+
+- zero respostas longas obrigatórias;
+- recuperação ativa;
+- feedback imediato;
+- exemplos sem entregar a resposta seguinte;
+- mapas SVG autorais;
 - 168 questões fechadas;
-- FME 3 como mapa da campanha trigonométrica;
-- FME 6, capítulos II–III, como mapa da Forja;
-- progresso local, sem conta e sem coleta de dados;
-- domínio atual recalculado a partir da pontuação;
-- nenhuma missão é concluída com questões pendentes;
-- build sempre começa apagando a saída anterior.
+- progresso local;
+- nenhuma missão concluída com pendências;
+- domínio recalculado a partir do desempenho.
 
-## Rodar
+Os PDFs de referência permanecem privados e **não devem ser adicionados ao repositório**.
+
+## 🧱 Stack
+
+- Astro 7;
+- React 19;
+- TypeScript;
+- Tailwind CSS 4;
+- Vitest;
+- Wrangler / Cloudflare Pages.
+
+## 🎨 Interface
+
+A aplicação é mobile-first e possui:
+
+- mapas visuais;
+- campanha em formato de jornada;
+- feedback parcial;
+- retomada de questões pendentes;
+- **tema claro persistente**;
+- estado salvo localmente.
+
+## 🚀 Desenvolvimento
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Validar
+## ✅ Validação
 
 ```bash
 npm test
+npm run check
 npm run build
 npm run preview
 ```
 
-## Cloudflare Pages
+O comando de build limpa `dist/` antes de gerar uma nova saída.
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Node.js: 22 ou superior
+## ☁️ Cloudflare Pages
 
-Publicação manual:
+Configuração:
+
+```text
+Build command: npm run build
+Output directory: dist
+Node.js: 22+
+```
+
+Deploy manual:
 
 ```bash
 npx wrangler pages deploy dist --project-name trigonometria-orbita-14
 ```
 
-Os PDFs do FME são referências privadas do estudo e não devem ser adicionados ao repositório.
+## 📁 Estrutura
+
+```text
+src/              aplicação e conteúdo
+tests/            testes
+AUDIT.md          auditoria do projeto
+astro.config.mjs  configuração Astro
+wrangler.jsonc    publicação Cloudflare
+```
+
+## 🔒 Conteúdo de referência
+
+Os materiais de estudo externos servem como referência curricular, mas não fazem parte do artefato público.
+
+O repositório deve conter apenas:
+
+- implementação;
+- conteúdo autoral permitido;
+- exercícios incorporados de forma apropriada;
+- testes;
+- documentação.
+
+---
+
+**Status:** campanha completa de 14 dias, com Trigonometria + Polinômios e tema persistente. 🚀
